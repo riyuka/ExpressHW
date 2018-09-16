@@ -1,0 +1,192 @@
+body {
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    color: #37474f;
+    padding: 40px 0;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    width: 232px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    padding: 0 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 24px;
+    cursor: pointer;
+    width: 160px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #00838f;
+    color: #fff;
+    border-radius: 6px;
+    border: none; 
+}
+
+button:hover {
+    background-color: #006064;
+}
+
+
+
+h1 {
+    width: 320px;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    background: transparent;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #61c2ff), color-stop(100%, #cd4444));
+    background: -webkit-linear-gradient(-45deg, #61c2ff 0%, #cd4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+fieldset {
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.a-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox {
+    cursor: pointer;
+    margin: 0 20px;
+    border: 4px solid;
+    border-radius: 50%;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.checkbox:first-child, .checkbox:last-child {
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox:nth-child(2), .checkbox:nth-child(4) {
+    width: 32px;
+    height: 32px;
+}
+
+.checkbox:nth-child(3) {
+    width: 24px;
+    height: 24px;
+}
+
+/* First 2 radios */
+
+.checkbox:first-child, .checkbox:nth-child(2) {
+    border-color: #00838f;
+}
+
+.checkbox:first-child:hover, .checkbox:nth-child(2):hover {
+    background-color: #80cbc4;
+}
+
+.checkbox:first-child.active, .checkbox:nth-child(2).active {
+    background-color: #00838f;
+}
+
+/* Last 2 radios */
+
+.checkbox:last-child, .checkbox:nth-child(4) {
+    border-color: #c2185b;
+}
+
+.checkbox:last-child:hover, .checkbox:nth-child(4):hover {
+    background-color: #f48fb1;
+}
+
+.checkbox:last-child.active, .checkbox:nth-child(4).active {
+    background-color: #c2185b;
+}
+
+/* Middle radio */
+
+.checkbox:nth-child(3) {
+    border-color: #ccc;
+}
+
+.checkbox:nth-child(3):hover {
+    background-color: #eee;
+}
+
+.checkbox:nth-child(3).active {
+    background-color: #ccc;
+}
+
+/* Gender */
+.checkbox.gender {
+    width: 24px;
+    height: 24px;
+    border-color: #aaa;
+}
+
+.checkbox.gender:hover {
+    background-color: #ccc;
+}
+
+.checkbox.gender.active {
+    background-color: #aaa;
+}
+
+/* Hide actual radio button */
+
+.checkbox input {
+    opacity: 0;
+}
+
+.agree-l {
+    color: #00838f;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.disagree-l {
+    color: #c2185b;
+    font-weight: bold;
+    margin-left: 16px;
+}

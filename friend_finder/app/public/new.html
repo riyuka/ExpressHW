@@ -1,0 +1,288 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend finder</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+<body>
+   <h1>Friend finder</h1>
+
+   <a href="/">Home</a>
+    
+   <form name="myForm" action="/create" onsubmit="return validateForm()" method="POST">
+
+    <fieldset>
+        <h3>Please enter your name.</h3>
+        <input type="text" name="name" placeholder="what's your name?">
+    </fieldset>
+    <fieldset>
+        <h3>Please select your gender.</h3>
+        <div class="a-wrapper">
+            <label>Male</label> <label class="checkbox gender"><input type="radio" name="gender" value="male"></label>
+            <label>Female</label> <label class="checkbox gender"><input type="radio" name="gender" value="female"></label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <h3>1.  You are usually the first to react to a sudden event: the telephone ringing or unexpected question.</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_one" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_one" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_one" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_one" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_one" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>2. You prefer to act immediately rather than speculate about various options.</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_two" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_two" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_two" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_two" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_two" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>3. You spend your leisure time actively socializing with a group of people, attending parties, shopping, etc.</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_three" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_three" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_three" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_three" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_three" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>4. You are a person somewhat reserved and distant in communicafour</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_four" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_four" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_four" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_four" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_four" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>5.  You tend to rely on your experience rather than on theoretical alternatifive</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_five" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_five" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_five" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_five" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_five" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>6.  When with a group of people, you enjoy being directly involved and being at the centre of attention.</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_six" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_six" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_six" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_six" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_six" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+    
+    <fieldset>
+        <h3>7. For you, it is easier to gain knowledge through hands-on experience than from books or manuaseven</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_seven" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_seven" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_seven" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_seven" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_seven" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>8. When solving a problem you would rather follow a familiar approach than seek a neweight</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_eight" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_eight" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_eight" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_eight" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_eight" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>9. When considering a situation you pay more attention to the current situation and less to a possible sequence of events.</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_nine" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_nine" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_nine" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_nine" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_nine" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <h3>10. You willingly involve yourself in matters which engage your sympathten</h3>
+        <div class="a-wrapper">
+            <label class="agree-l">Agree</label>
+            <div class="checkboxes">
+                <label class="checkbox">
+                    <input type="radio" name="q_ten" value="1">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_ten" value="2">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_ten" value="3">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_ten" value="4">
+                </label>
+                <label class="checkbox">
+                    <input type="radio" name="q_ten" value="5">
+                </label>
+            </div>
+            <label class="disagree-l">Disagree</label>
+        </div>
+    </fieldset>
+    <button>submit</button>
+    </form>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/javascript/jax.js"></script>
+</body>
+</html>
